@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configuraciones - Mi Conjunto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="diseño_notify.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Mi Conjunto</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="configuracion.html">Configuracion Datos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contactarme</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Cerrar Sesión</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="main-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Datos Personales</h2>
+          <div class="form-group">
+            <label for="text-size"> Actualizar Informacion</label>
+            <div class="form-group mb-3">
+              <label for="user" class="form-label">Nombres</label>
+              <input type="text" class="form-control" id="user" name="user" placeholder="Ingrese sus nombres">
+            </div>
+            <div class="form-group mb-3">
+              <label for="user" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="user" name="user" placeholder="Ingrese sus apellidos">
+            </div>
+            <div class="form-group mb-3">
+              <label for="user" class="form-label">Nuevo Correo Electronico</label>
+              <input type="text" class="form-control" id="user" name="user" placeholder="Ingrese su correo electronico">
+            </div>
+            <div class="form-group mb-3">
+              <label for="user" class="form-label">Confirmar Su Correo Electronico</label>
+              <input type="text" class="form-control" id="user" name="user" placeholder="Ingrese nuevamente su correo electronico">
+            </div>
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="animations">
+            <label class="form-check-label" for="animations">Aceptar terminos y condiciones</label>
+          </div>
+          <button class="btn btn-primary mt-3" id="save-btn">Actualizar</button>
+          <a href="NOTIFY.html" class="btn btn-secondary mt-3">Volver a la página principal</a> <br>
+          <a href="login_recuperar_contraseña.html" class="forgot-password-link">Quieres cambiar la contraseña?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

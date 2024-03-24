@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear cuenta</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="diseño_crear.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton"></script>
+  <script src="script.js"></script>
+  <script>
+    function confirmar() {
+      let nombres = document.getElementById('user').value;
+      let email = document.getElementById('user').value;
+      let contraseña = document.getElementById('contra').value;
+  
+      if (nombres.length == 0) {
+        alert("Ingrese su nombre completo");
+        return false;
+    } else if (email.length == 0) {
+        alert("Ingrese su correo");
+        return false;
+      } else if (contraseña.length == 0) {
+        alert("Ingrese la contraseña");
+        return false;
+      } else {
+        alert("¡Hola! Has creado tu cuenta con éxito.");
+
+        window.location.href = "NOTIFY.html";
+        return false;
+      }
+    }
+   
+  </script>
+</head>
+<body>
+
+  
+  <div class="container">
+    <div class="login-form">
+      <h1 class="text-center mb-4">Crear cuenta</h1>
+      <form name="MiForm" id="MiForm" onSubmit="return confirmar()">
+        <div class="form-group mb-3">
+          <label for="user" class="form-label">Nombre completo:</label>
+          <input type="text" class="form-control" id="user" name="user" placeholder="Ingrese su nombre completo">
+        </div>
+        <div class="form-group mb-3">
+            <label for="user" class="form-label">Email:</label>
+            <input type="text" class="form-control" id="user" name="user" placeholder="Ingrese su email">
+          </div>
+        <div class="form-group mb-3">
+          <label for="contra" class="form-label">Contraseña:</label>
+          <input type="password" class="form-control" id="contra" name="contra" placeholder="Ingrese su contraseña">
+        </div>
+        <div class="d-grid gap-2 mb-3">
+          <button type="submit" class="btn btn-primary">Aceptar</button>
+        </div>
+      </form>
+      <p class="text-center mb-0">
+        <a href="index.html"><p>Volver a la pagina de la tienda</p></a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
